@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+      integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
+      crossorigin="anonymous"
+    />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/index.css" />
+    <title>PJ Bruwer</title>
+  </head>
+
+  <body onload="isLiked()">
+    <!-- The header will contain two rows. One with the website title and nav bar 
+        and the second will contain our page title with a background -->
+    <header>
+      <!-- this row consists of two columns. The first is the website title -->
+      <div class="row top-line">
+        <div class="col-md-4">
+          <div class="row justify-content-center">
+            <p class="my-name">PAULUS JACOBUS BRUWER</p>
+          </div>
+        </div>
+
+        <!-- the second column is this row is the nav bar for the website -->
+        <div class="col-md-7">
+          <nav class="row justify-content-center">
+            <ul class="nav nav-tabs">
+              <li class="nav-item">
+                <a class="nav-link active" href="#">HOME</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="project.html">PROJECT</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact_me.html">CONTACT ME</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="col-md-1">
+          <a href="pin.html" class="icon" id="top_line_pin">
+            <img src="media/Pin-White.png" alt="pin" />
+          </a>
+        </div>
+      </div>
+
+      <!-- in this row, we simple have a title for the page which will feature a large background image -->
+      <div class="row title-row">
+        <p class="title">AUTOMATION & RESTORATION</p>
+      </div>
+    </header>
+
+    <!-- the following pattern repeats. The first row in the section contains a title and the row to follow contains the 
+    body of the section -->
+    <div class="row section-title">
+      <h1>ABOUT MY HOBBY</h1>
+    </div>
+    <div class="row">
+      <p id="about">
+        Automation and restoration encapsulates my deep-rooted passion for all
+        things mechanical. Inspired by my previous role as a maintenance
+        technician for automated and semi-automated production machinery, this
+        hobby thrives on the art of breathing new life into discarded and
+        forgotten machines. Beyond the routine task of maintaining the
+        intricacies of these machines, my endeavors have led me to embark on
+        ambitious projects, restoring once-abandoned relics to their former
+        glory. Such endeavors encompass a wide range of machines, each offering
+        a distinct challenge and an opportunity for me to showcase my expertise.
+        Some machines hail from a bygone era, relying on relay logic and pure
+        mechanical prowess, while others boast the sophistication of logic
+        computers. With unwavering dedication, I indulge in the intricate
+        intricacies of automation and restoration, ensuring that these
+        mechanical marvels can once again hum with the vibrant energy of their
+        heyday.
+      </p>
+    </div>
+
+    <!-- the pattern here is the same with the exception being that the body is not a paragraph -->
+    <div class="row section-title">
+      <h1>PROJECTS</h1>
+    </div>
+
+    <!-- the content of this section is a bootstrap class (carousel) containing an image, title and a description-->
+    <div class="row justify-content-center">
+      <a class="carousel-projects" href="project.html">
+        <div class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                src="media/carousel-cover.gif"
+                class="d-block w-100"
+                alt="..."
+              />
+              <div class="carousel-caption d-none d-md-block">
+                <h5>C-FOLD MACHINE</h5>
+                <p>
+                  Restoration of a fully automated folded hand towel machine for
+                  paper company.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </a>
+      <a class="icon" id="pin-cfold" onclick="pinArticle(cFold)">
+        <img src="media/Pin-Blue.png" alt="pin" />
+      </a>
+      <a class="icon like" id="like-cfold" onclick="like(this.id)">
+        <img src="media/ThumbsUp-Blue.png" alt="like" />
+      </a>
+      <a href="project.html #c-fold-comments" class="icon" id="comment-cfold">
+        <img src="media/Comment-Blue.png" alt="comment" />
+      </a>
+    </div>
+    <footer>
+      <a href="mailto:paulbruwer56@gmail.com">paulbruwer56@gmail.com</a>
+    </footer>
+    <script src="js/index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,105 @@
+body{
+    background-image: url(../media/grid.png);
+    background-size: cover;
+    background-color: rgba(255, 255, 255, 0.61);
+    background-blend-mode: lighten;
+}
+
+h1{
+    font-size: 3vw;
+}
+
+.top-line{
+    background-color: #211649;
+    align-items: center;
+    font-weight: bold;
+    font-size: 1.2vw;
+}
+
+.my-name{
+    margin: auto;
+    padding-bottom: 0;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.title-row{
+    margin: auto;
+    padding-top: 20vw;
+    padding-bottom: 20vw;
+}
+
+.title{
+    width: 100%;
+    font-size: 4vw;
+    font-weight: lighter;
+    background-color: rgba(0, 0, 0, 0.76);
+    text-align: center;
+    color: white;
+}
+
+header{
+    background-image: url("../media/titlevid.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header nav a{
+    color: white;
+    margin-right: 8vw;
+}
+
+header li a:hover{
+    color: white;
+}
+
+header li:hover{
+    text-decoration: underline;
+    text-decoration-color: white;
+}
+
+.section-title{
+    margin: auto;
+    width: 100%;
+    background-color: #211649;
+    color: white;
+    padding-left: 6vw;
+    font-weight: lighter;
+    margin-top: 2vw;
+}
+
+.article-col{
+    justify-content: center;
+}
+
+.post-it-note{
+    margin: auto;
+    margin-top: 50px;
+    height: 0;
+    width: 20%;
+    padding-bottom: 18%;
+    background-color: aqua;
+    border-radius: 5%;
+}
+
+.article{
+    background-size: cover;
+    text-align: center;
+    height: 0;
+    width: 70%;
+    padding-bottom: 50%;
+    margin: auto;
+    transform: translateY(35%);
+    border-radius: 5%;
+    color: white;
+    background-color: black;
+}
+
+.article:hover{
+    opacity: 0.2;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;}
+
+.article h5{
+    font-size: 2vw;
+}

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+      integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
+      crossorigin="anonymous"
+    />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/contact_me.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- on this page the title and background image part of the header are removed. the nav and title remain -->
+    <header>
+      <div class="row top-line">
+        <div class="col-md-4">
+          <div class="row justify-content-center">
+            <p class="my-name">PAULUS JACOBUS BRUWER</p>
+          </div>
+        </div>
+        <div class="col-md-7">
+          <nav class="row justify-content-center">
+            <ul class="nav nav-tabs">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">HOME</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="project.html">PROJECT</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#">CONTACT ME</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="col-md-1">
+          <a href="pin.html" class="icon" id="top_line_pin">
+            <img src="media/Pin-White.png" alt="pin" />
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <!-- this section is our contact page. a block that contains more blocks that are arraged 
+    using bootstrap rows and columns to collect information from the user. -->
+    <div id="contact-page">
+      <div class="row justify-content-center" id="contact-heading">
+        <div class="col-md-12 justify-content-center">
+          <h1>GET IN TOUCH</h1>
+        </div>
+
+        <div class="col-md-12 email">
+          <a href="mailto:paulbruwer56@gmail.com">paulbruwer56@gmail.com</a>
+        </div>
+      </div>
+
+      <div class="row" id="contact-block">
+        <div class="col-md-6" id="contact-left">
+          <div class="row" id="contact-name">
+            <input class="form-control" type="text" placeholder="Your Name:" />
+          </div>
+          <div class="row" id="contact-email">
+            <input
+              class="form-control"
+              type="text"
+              placeholder="Your E-mail:"
+            />
+          </div>
+          <div class="row" id="contact-nr">
+            <input
+              class="form-control"
+              type="text"
+              placeholder="Your Phone Number:"
+            />
+          </div>
+        </div>
+        <div class="col-md-6" id="contact-msg">
+          <input class="form-control" type="text" placeholder="Your Message" />
+        </div>
+      </div>
+
+      <div id="r-button">
+        <p>Please select how you would like to be contacted:</p>
+        <input type="radio" id="html" name="contact-methode" value="Phone" />
+        <label for="html">Phone</label><br />
+        <input type="radio" id="css" name="contact-methode" value="Email" />
+        <label for="css">Email</label><br />
+      </div>
+
+      <div class="row" id="contact-button">
+        <button type="button" class="btn btn-primary">SEND MESSAGE</button>
+      </div>
+    </div>
+  </body>
+</html>

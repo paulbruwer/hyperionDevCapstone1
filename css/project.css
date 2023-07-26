@@ -1,0 +1,158 @@
+body{
+    background-image: url('../media/grid.png');
+    background-size: contain;
+    background-color: rgba(255, 255, 255, 0.61);
+    background-blend-mode: lighten;
+}
+
+h1{
+    font-size: 3vw;
+}
+
+.top-line{
+    background-color: #211649;
+    align-items: center;
+    font-weight: bold;
+    font-size: 1.2vw;
+}
+
+.my-name{
+    margin: auto;
+    padding-bottom: 0;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.title-row{
+    margin: auto;
+    padding-top: 20vw;
+    padding-bottom: 20vw;
+}
+
+.title{
+    width: 100%;
+    font-size: 4vw;
+    font-weight: lighter;
+    background-color: rgba(0, 0, 0, 0.76);
+    text-align: center;
+    color: white;
+}
+
+header{
+    background-image: url("../media/carousel-cover.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header nav a{
+    color: white;
+    margin-right: 8vw;
+}
+
+header li a:hover{
+    color: white;
+}
+
+header li:hover{
+    text-decoration: underline;
+    text-decoration-color: white;
+}
+
+.icon{
+    margin-top: 2vw;
+    width: 27px;
+    height: 27px;
+}
+
+#top_line_pin{
+    margin-top: 0vw;
+    margin-right: 2vw;
+    float: right;
+}
+
+.icon:hover{
+    border: solid #211649c5 2px;
+    border-radius: 5px;
+}
+
+.icon img{
+    width: 100%;
+    height: 100%;
+}
+
+.section-title{
+    margin: auto;
+    width: 100%;
+    background-color: #211649;
+    color: white;
+    padding-left: 6vw;
+    font-weight: lighter;
+    margin-top: 5vw;
+}
+
+.story-section-l{
+    margin-top: 2vw;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    background-color: white;
+    box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.5);
+    position: relative;
+}
+
+.story-section-r{
+    margin-top: 5vw;
+    margin-right: 10vw;
+    margin-left: 10vw;
+    background-color: white;
+    box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.5);
+}
+
+.story-section-l img{
+    width: 100%;
+    height: auto;
+    object-fit: scale-down;
+}
+
+.story-section-r img{
+    width: 100%;
+    height: auto;
+    object-fit: scale-down;
+    float: right;
+}
+
+.story-section-l p{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-right: 5vw;
+    margin-left: 5vw;
+    text-align: justify;
+    color:#211649a2;
+    font-size: 1.3vw;
+}
+
+.story-section-r p{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-left: 5vw;
+    margin-right: 5vw;
+    text-align: justify;
+    color:#211649a2;
+    font-size: 1.3vw;
+}
+
+video{
+    width: 100%;
+    height: auto;
+    object-fit: scale-down;
+}
+
+footer{
+    background-color: #211649;
+    text-align: center;
+}
+
+footer a{
+    color: white;
+}

@@ -1,0 +1,145 @@
+body{
+    background-image: url('../media/grid.png');
+    background-size: contain;
+    background-color: rgba(255, 255, 255, 0.61);
+    background-blend-mode: lighten;
+}
+
+h1{
+    font-size: 3vw;
+}
+
+.top-line{
+    background-color: #211649;
+    align-items: center;
+    font-weight: bold;
+    font-size: 1.2vw;
+}
+
+.my-name{
+    margin: auto;
+    padding-bottom: 0;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.title-row{
+    margin: auto;
+    padding-top: 20vw;
+    padding-bottom: 20vw;
+}
+
+.title{
+    width: 100%;
+    font-size: 4vw;
+    font-weight: lighter;
+    background-color: rgba(0, 0, 0, 0.76);
+    text-align: center;
+    color: white;
+}
+
+header nav a{
+    color: white;
+    margin-right: 8vw;
+}
+
+header li a:hover{
+    color: white;
+}
+
+header li:hover{
+    text-decoration: underline;
+    text-decoration-color: white;
+}
+
+.icon{
+    margin-top: 2vw;
+    width: 27px;
+    height: 27px;
+}
+
+#top_line_pin{
+    margin-top: 0vw;
+    margin-right: 2vw;
+    float: right;
+}
+
+.icon:hover{
+    border: solid #211649c5 2px;
+    border-radius: 5px;
+}
+
+.icon img{
+    width: 100%;
+    height: 100%;
+}
+
+.section-title{
+    margin: auto;
+    width: 100%;
+    background-color: #211649;
+    color: white;
+    padding-left: 6vw;
+    font-weight: lighter;
+    margin-top: 5vw;
+}
+
+#contact-page{
+    margin-top: 10vw;
+    margin-left: 20vw;
+    margin-right: 20vw;;
+    background-color: white;
+    box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.5);
+}
+
+#contact-heading h1{
+    margin: auto;
+    margin-top: 2vw;
+    text-align: center;
+    color: #211649;
+    font-weight: bolder;
+}
+
+.email{
+    text-align: center;
+}
+
+.email a{
+    color: #211649;
+}
+
+#contact-block{
+    margin-left: 5vw;
+    margin-right: 5vw;
+    margin-top: 2vw;
+    margin-bottom: 2vw;
+}
+
+.form-control{
+    margin: 0.2vw;
+    background-color: white;
+    box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.5);
+    height: 100%;
+}
+
+input{
+    font-weight: bold;
+}
+
+#contact-button{
+    padding: 3vw;
+    justify-content: center;
+}
+
+#r-button{
+    background-color: white;
+    box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    color:#211649a2;
+}
+
+.btn{
+    background-color: #211649;
+    border-color: #211649;
+    font-weight: bold;
+}
