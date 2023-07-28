@@ -11,8 +11,8 @@ function Project(title, page, imgSrc, description) {
 /*C-fold machine project object*/
 const cFold = new Project(
   "C-FOLD MACHINE",
-  "project.html",
-  "media/carousel-cover.gif",
+  "../project/project.html",
+  "../media/carousel-cover.gif",
   "Restoration of a fully automated folded hand towel machine for paper company."
 );
 
@@ -61,11 +61,11 @@ const like = (id) => {
   /*check whether the state of the like*/
   if (isLiked === null || isLiked === false) {
     isLiked = true;
-    buttonImage.src = "media/ThumbsUp-White.png";
+    buttonImage.src = "../media/ThumbsUp-White.png";
     thisButton.style.backgroundColor = "#211649";
   } else if (isLiked === true) {
     isLiked = false;
-    buttonImage.src = "media/ThumbsUp-Blue.png";
+    buttonImage.src = "../media/ThumbsUp-Blue.png";
     thisButton.style.backgroundColor = "transparent";
   }
 
@@ -85,10 +85,10 @@ const isLiked = () => {
     let buttonImage = thisButton.children[0];
 
     if (isLiked === null || isLiked === false) {
-      buttonImage.src = "media/ThumbsUp-Blue.png";
+      buttonImage.src = "../media/ThumbsUp-Blue.png";
       thisButton.style.backgroundColor = "transparent";
     } else if (isLiked === true) {
-      buttonImage.src = "media/ThumbsUp-White.png";
+      buttonImage.src = "../media/ThumbsUp-White.png";
       thisButton.style.backgroundColor = "#211649";
     }
   }
