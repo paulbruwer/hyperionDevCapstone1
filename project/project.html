@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="project.css" />
     <title>PJ Bruwer</title>
   </head>
-  <body>
+  <body onload="loadComments()">
     <!-- Again on this page, the header is the same as the index page. the only differences being the title of the page and the image 
     used for the background. Also the active tab in the nav bar has been changed -->
     <header>
@@ -174,30 +174,20 @@
         <div class="row d-flex justify-content-center">
           <div class="col-md-12 col-lg-10 col-xl-8">
             <div class="card">
-              <div
-                class="card-footer py-3 border-0"
-                style="background-color: #f8f9fa"
-              >
+              <div class="card-body" id="commentSection">
+
+              </div>
+              <div class="card-footer py-3 border-0" style="background-color: #f8f9fa;">
                 <div class="d-flex flex-start w-100">
                   <div class="form-outline w-100">
-                    <textarea
-                      class="form-control"
-                      id="textAreaExample"
-                      rows="4"
-                      style="background: #fff"
-                    ></textarea>
-                    <label class="form-label" for="textAreaExample"
-                      >Message</label
-                    >
+                    <textarea class="form-control" id="textAreaExample" rows="4"
+                      style="background: #fff;"></textarea>
+                    <label class="form-label" for="textAreaExample">Message</label>
                   </div>
                 </div>
                 <div class="float-end mt-2 pt-1">
-                  <button type="button" class="btn btn-primary btn-sm">
-                    Post comment
-                  </button>
-                  <button type="button" class="btn btn-outline-primary btn-sm">
-                    Cancel
-                  </button>
+                  <button type="button" class="btn btn-primary btn-sm" id="postButton">Post comment</button>
+                  <button type="button" class="btn btn-outline-primary btn-sm" id="cancelButton">Cancel</button>
                 </div>
               </div>
             </div>
@@ -209,5 +199,6 @@
     <footer>
       <a href="mailto:paulbruwer56@gmail.com">paulbruwer56@gmail.com</a>
     </footer>
+    <script src="project.js"></script>
   </body>
 </html>
