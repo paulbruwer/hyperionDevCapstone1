@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="project.css" />
     <title>PJ Bruwer</title>
   </head>
-  <body onload="loadComments()">
+  <body onload="loadComments(), isLiked()">
     <!-- Again on this page, the header is the same as the index page. the only differences being the title of the page and the image 
     used for the background. Also the active tab in the nav bar has been changed -->
     <header>
@@ -52,7 +52,26 @@
 
     <!-- this page contains only one large content section featuring the project -->
     <div class="row section-title">
-      <h1>C-FOLD</h1>
+      <div class="col-md-9">
+        <h1>C-FOLD</h1>
+      </div>
+      <div class="col-xs-1">
+        <div class="icon" id="pin-cfold" onclick="pinArticle(cFold)">
+          <img src="../media/Pin-White.png" alt="pin" />
+        </div>
+      </div>
+      <div class="col-xs-1">
+        <div class="icon like" id="like-cfold" onclick="like(this.id)">
+          <img src="../media/ThumbsUp-White.png" alt="like" />
+        </div>
+      </div>
+      <div class="col-xs-1">
+        <div class="icon" id="comment-cfold">
+          <a href="#c-fold-comments">
+            <img src="../media/Comment-White.png" alt="comment" />
+          </a>
+        </div>
+      </div>
     </div>
 
     <!-- for this project section there is a repeating pattern. rows containing equal width columns. one column contains the 
